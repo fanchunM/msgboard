@@ -1,0 +1,45 @@
+.fly-panel {
+    background-color: #fcf9f0;
+    border-radius: 2px;
+}
+.layui-tab {
+    margin: 10px 0;
+    text-align: left!important;
+    background-color: #fcf9f0;
+}
+.layui-tab-brief>.layui-tab-title .layui-this {
+   	color: #c6ae6c;
+   }
+.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after{
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #c6ae6c;
+}
+
+.layui-form-label-left {
+    display: block;
+    padding: 0px 10px;
+    width: 93%;
+    font-weight: 400;
+    text-align: left;
+    color: #c6ae6c;
+}
+.layui-btn {
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18px;
+    background-color: #fcf9f0;
+    color: #c6ae6c;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #c6ae6c;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.layui-btn:hover {
+    opacity: .8;
+    filter: alpha(opacity=80);
+    color:#c6ae6c;
+}

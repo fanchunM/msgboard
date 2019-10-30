@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+/*主题分类*/
+.theme-div {
+	float:left;
+	width:190px;
+	margin-right:5px
+}
+.layui-tree-skin-subject{
+	padding-left:10px;
+}
+.layui-tree-skin-subject .layui-tree-spread{
+	color:#E0E0E0;
+}
+.layui-tree-skin-subject .layui-tree-branch{
+	padding-left: 0px;
+}
+.layui-tree-skin-subject .layui-tree-leaf{
+	padding-left: 0px;
+}
+.layui-tree-skin-subject.layui-tree li a cite{
+	color: #676767;
+}
+.layui-tree-skin-subject.layui-tree .layui-show li a cite{
+	color: #AFAFAF;
+}
+.layui-tree-skin-subject.layui-tree li.active > a cite{
+	color:#fff;
+	background-color:#EB7350;
+}
+.layui-tree-skin-subject.layui-tree li ul{
+	margin-left: 22px;
+}
+/*留言板块*/
+
+.msg-div {
+	float:left;
+	width:750px;
+	margin-bottom:10px
+}
+.msg-list-container{
+	border-bottom:0px;
+	margin-bottom:10px;
+}
+.msg-list-box{
+	border-bottom: 1px solid #E8E8E8;
+    overflow: hidden;
+    padding: 10px 15px;
+}
+.msg-list-box .msg-list-content{
+	float:left;
+}
+.msg-list-box .msg-list-content .msg-list-title{
+	margin:0;
+	font-size: 16px;
+/* 	color: #060606; */
+	width:600px
+}
+.msg-list-box .msg-list-content .msg-list-others{
+	margin-top:8px;
+	font-size: 15px;
+}
+.msg-list-box .msg-list-content .msg-list-others .msg-list-dot{
+	width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: #949494;
+    display: inline-block;
+    margin: 3px 7px;
+}
+.msg-list-box .msg-list-content .msg-list-others 
+ .msg-list-category{
+ 	float:left;
+/* 	background: #E6E6E6; */
+    color: #ffffff;
+    /* padding-right: 10px; */
+    font-size: 90%;
+    padding: 4px 4px;
+}
+.msg-list-box .msg-list-content .msg-list-others 
+ .msg-list-name{
+/*  	width:150px; */
+ 	float:left;
+    margin-left: 10px;
+	padding: 4px 4px; 
+	font-size:14px;
+	color:#ccc;
+}
+
+.msg-list-box .msg-list-content .msg-list-others 
+ .msg-list-time{
+/*  	width:200px; */
+ 	float:left;
+/*     margin-left: 10px; */
+	padding: 4px 4px; 
+	font-size:14px;
+	color:#ccc;
+}
+.msg-list-box .msg-list-content .msg-list-others 
+ .msg-list-reply{
+/*  	width:150px; */
+ 	float:left;
+/*     margin-left: 10px; */
+	padding: 4px 4px; 
+	font-size:14px;
+	color:#ccc;
+ }
+.msg-list-box .msg-list-status{
+	float:right;
+	line-height: 55px;
+}
+.msg-list-box .msg-list-status .label{
+	padding: 4px 4px;
+	font-size: 80%;
+}
+.msg-list-box .msg-list-status .msg-list-status-nofocus{
+	
+}
+
+/*其余板块*/
+/* 查询更多*/
+.look-more {
+	border-top: 1px solid #E8E8E8;
+	bottom:0;
+	left:0;
+	right:0;
+	text-align:center;
+	font-size: 13px;
+}
+.look-more a {
+	cursor:pointer;
+	text-decoration:none;
+}
+.other-div {
+    float: left;
+    width: 250px;
+    margin-left: 5px;
+}
+.ellipsis {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+/* 常用功能 */
+.changyong {
+	
+}
+.changyong a {
+	cursor:pointer;
+	text-decoration:none;
+}
+.image-changyong {
+	width :40px;
+	margin-bottom:5px
+}
+.span-changyong {
+	font-size: 14px
+}
+/*未关注*/
+.label-important {
+	background-color: #DC143C
+}
+.msg-list-content a{
+	color:#666666
+}
+.msg-list-content a:hover {color:#b12e45;text-decoration: none;}
+.msg-list-content a:visited {text-decoration: none;}
+.msg-list-content a:active {text-decoration: none;}
+.msg-list-content a:link {text-decoration: none;}
+.vertical-line {
+	float:left;
+	margin: 2px 5px; 
+	font-size:16px;
+	color:#f1eded
+}
+.label-info{
+	background-color: #79ADD2
+}
+.changyong a:hover {color:#b12e45;text-decoration: none;}
+.changyong a:visited {text-decoration: none;}
+.changyong a:active {text-decoration: none;}
+.changyong a:link {text-decoration: none;}
+.head-image {
+	overflow: hidden;
+	width:50px;
+	height:50px;
+	border-radius: 50px;
+	float: left;
+	margin-right: 10px;
+}

@@ -1,0 +1,42 @@
+.datagrid-mask-msg {
+    box-sizing: content-box;
+}
+.a-button {
+	border-radius: 5px;
+	margin-left:10px;
+	padding:0 5px
+}
+.datagrid-toolbar-style {
+	padding: 5px 0px;
+	background-color: #fff;
+}
+.datagrid-toolbar-span {
+	padding:3px 8px;
+	background-color: #f5f3f3;
+	margin-left:10px;
+}
+.datagrid-toolbar-span-reply {
+	float:left;
+	width:120px;
+	padding:3px 5px;
+	background-color: #f5f3f3;
+}
+.datagrid-toolbar-span-reply-person {
+	width:120px;
+	padding:3px 5px;
+	background-color: #f5f3f3;
+	margin-right:10px;
+}
+.datagrid-toolbar-span-reply-value {
+	margin-left:5px;
+	float:left;
+	padding:3px 8px;
+}
+.datagrid-toolbar-span-reply-textNews {
+	float:left;
+	width:90px;
+	padding:3px 5px;
+	background-color: #f5f3f3;
+}
+
+

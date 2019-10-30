@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+body,html{  font-size:12pt;16x line-height: 1.2;  color: #333333; font-family:"Open Sans","PingFang SC", "Microsoft Yahei", 微软雅黑, serif, Arial, serif; }
+dl,dt,dd,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,ul,ol,blockquote,select{margin: 0;font-family:"Open Sans","PingFang SC", "Microsoft Yahei", 微软雅黑, serif, Arial, serif; }
+ul,ol,li,dl,dt,dd{list-type:none;LIST-STYLE-TYPE: none; margin:0; padding:0;}
+form,input,select,checkbox,textarea{display:inline; vertical-align: middle;  margin-right:0px;  }
+input,select,checkbox,textarea {color: #333333; }
+input {_top:-1px; _position:relative;*margin-right:0; font-family:"Open Sans", "Hiragino Sans GB", "Hiragino Sans GB W3", "PingFang SC", "Microsoft Yahei", 微软雅黑, serif, Arial, serif; }
+p {padding:0px ;margin:0px}
+a:link {
+    color: #333333;
+    text-decoration: none;
+}
+a:visited {
+    color: #333333;
+    text-decoration: none;
+}
+/*///////////////wrapper ///////////////*/
+#wrapper {/*min-height: 100%;*/height:auto; margin: auto; position: relative; }/*width=*/
+* html #wrapper { height: 100%;}
+#out-content {display:block; min-width: 100%;}
+#out-content:after {
+  clear: both;
+  display: block;
+  font: 1px/0px serif;
+  content: ".";
+  height: 0;
+  visibility: hidden;
+}
+* html #out-content {  height: 1%;}
+
+#wrapper .pb{padding-bottom:1px;}
+
+/*///////////////clearfix ///////////////*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {	display: inline-block;}
+html[xmlns] .clearfix {	display: block;}
+* html .clearfix {	height: 1%;}
+
+.w1200 {width :1200px; margin:auto;}
+.w100per {width :100%;min-width :100%;}
+
+/*/////////////// footer ///////////////*/
+#footer {display:block;text-align:center;overflow:hidden; background: #0080c0; color:#fff; font-size:10pt;font-family:"Open Sans","PingFang SC", "Microsoft Yahei", 微软雅黑, serif, Arial, serif; position:relative; }
+
+#footer .infotx {color:#fff;margin:20px 20px;font-size:14px;text-align:left;}
+#footer  .right {display:inline-block; float:right; text-align:right;  }
+
+#FontScroll{width:1100px;height:45px;line-height:45px;overflow:hidden;padding:0px 80px;margin:0 auto;}
+#FontScroll .ul .li{float:left;text-align:left;width:550px;}
+
+
+/*//////////////////////////////// 顶部栏 //////////////////////////////////////////////////*/
+#header {position: fixed;top: 0;left: 0;z-index: 9999;border-top: 3px solid #D93A07;width: 100%;box-shadow: 0 0 1px 0px rgba(0,0,0,0.3), 0 0 6px 2px rgba(0,0,0,0.15);background: #FAFAFA;}
+.toptools {display:block;color:#2a2a2a; height:48px;line-height: 48px;font-size:10pt;text-align:left;}
+.toptools .searchBox{margin-top: 10px;}
+.toptools .searchBox input{height:28px;border-radius: 0px;font-size: 15px;}
+.toptools li { font-family:"Open Sans","PingFang SC", "Microsoft Yahei", 微软雅黑, serif, Arial, serif;}
+.toptools .left {display:inline-block;float:left;text-align:left;/*padding:0 12px;*/width:300px;}
+.toptools .right {display:inline-block; float:right; text-align:right;  }
+.toptools a,.toptools a:visited { color:#2a2a2a;text-decoration:none;}
+.toptools a:hover { color:#c00;text-decoration:none;}
+
+/*//////////////////////////////////布局边框///////////////////////////////*/
+.border-div {border: 1px solid #ccc}
+.row-padding {padding-left :0px; padding-right:0px}
+/*分页属性*/
+.f {
+    FONT-SIZE: 14pt;
+    display: inline;
+    vertical-align: top;
+    position: relative;
+    top: -2px;
+}
+/* .pages { */
+/*   display:block; */
+/*   font-size:9pt; font-family:Tahoma;  */
+/*   overflow:hidden; */
+/*   margin:10px 0; */
+/* } */
+/* .pages .L { */
+/*   *padding: 0px 0px 0px 0px; */
+/*   display:inline; */
+/*   TEXT-ALIGN: left; */
+/*   float:left;  */
+/*   position:relative; */
+/*   vertical-align: baseline */
+/* } */
+/* .pages .R { */
+ 
+/*   *padding: 0px 0px 0px 0px; */
+/*   display:inline; */
+/*   TEXT-ALIGN: right; */
+/*   float:right;  */
+/*   position:relative; */
+/*   vertical-align: baseline */
+/* } */
+/* .pages A { */
+/*   border: 1px solid #d9d9d9; */
+/*   PADDING: 2px 10px ; */
+/*   CURSOR: pointer; */
+/*   COLOR: #000; */
+/*   MARGIN-RIGHT: 3px; */
+/*   TEXT-DECORATION: none; */
+/*   vertical-align:middle; */
+/* /*   height: 18px; */ */
+/*   line-height: 18px; */
+/*   display:inline-block; */
+/* } */
+
+/* .pages A:hover { */
+/*   BORDER: #2f6699 1px solid; */
+/*   COLOR: #fff; */
+/*   BACKGROUND-COLOR: #2f6699; */
+/*   text-decoration:none; */
+/* } */
+/* .pages .current { */
+/*   COLOR: #fff; */
+/*   PADDING: 4px 10px ; */
+/*   #PADDING: 2px 10px ; */
+/*   BACKGROUND-COLOR: #2f6699; */
+/*   BORDER: #2f6699 1px solid; */
+/* } */
+
+
+/* .pages INPUT { */
+/*   BORDER: #d9d9d9  1px solid; */
+/*   PADDING: 0px 5px; */
+/*   FONT-SIZE: 9pt; */
+/*   MARGIN-RIGHT: 3px; */
+/*   VERTICAL-ALIGN: middle; */
+/*   WIDTH: 25px; */
+/*   COLOR: #000; */
+/*   LINE-HEIGHT: 22px; */
+/*   HEIGHT: 22px; */
+/* } */
+
+a:link {
+    color: #333333;
+    text-decoration: none;
+}
+.tit1{ font-size:12pt; line-height:2.3;display:inline-block;vertical-align:middle}
+.tit2{ font-size:12pt; color:#333;font-weight:bold; letter-spacing:1px;line-height:1.5; }
+.tit3{ font-size:14pt; color:#333;font-weight:bold; letter-spacing:1px;line-height:1.5; }
+.tit4{ font-size:14pt; color:#999;font-weight:bold; letter-spacing:1px;line-height:1.5; }
+.tit5{ font-size:12pt; color:#fff;font-weight:bold; letter-spacing:1px;line-height:2; }
+.tit6{ font-size:16pt; color:#f00;font-weight:bold; letter-spacing:1px;line-height:2; }
+.tit7{ font-size:12pt; color:#333;line-height:1.7; }
+
+.tab_Contentbox{
+ display:block;
+ clear:both;
+ padding:0 10px;
+ position:relative; z-index:10; text-align:left;
+ 
+}
+.list_01 { display:block;line-height:1.4;}
+.list_01 .li{ text-align:left; /* background: url("/images/arrow.png") no-repeat 3px 10px; */ padding:5px 0px 4px 5px; letter-spacing:0px;overflow:hidden }
+.list_01 .li a,.list_01 .li a:visited { color:#333333;text-decoration:none;}
+.list_01 .li a:hover { color:#c00;text-decoration:none;}
+.list_01 font{ font-size:10pt; float:right; text-align:right;padding-top:0px;font-family:"Open Sans","PingFang SC", "Microsoft Yahei", 微软雅黑, serif, Arial, serif;overflow:hidden;}
+
+.list_02 { display:block;line-height:1.5;}
+.list_02 .li{ text-align:left; padding:5px 0px 5px 13px; letter-spacing:0px;overflow:hidden }
+
+.h_5 { overflow-y: hidden;display: block;height:1px;margin:0 10px 5px 10px;}
+.h_10 { overflow-y: hidden;display: block;height:1px;border-bottom:1px dashed #999;margin-top:10px;margin-bottom:10px;}
+.h_1 { overflow-y: hidden;display: block;height:1px;border-bottom:1px dashed #999;margin-top:5px;margin-bottom:5px;}
+.h_6 { overflow-y: hidden;display: block;height:4px;}
+
+.txt_title1{ display:block;font-family:"Open Sans","PingFang SC", "Microsoft Yahei", 微软雅黑, serif, Arial, serif; color:#333333;font-weight:bold; font-size:24px; padding:10px 0px;text-align:center;}
+.txt_subtitle{ display:block;font-family:"Open Sans","PingFang SC", "Microsoft Yahei", 微软雅黑, serif, Arial, serif; color:#ef3c3c;font-weight:bold; font-size:20px;text-align:center;margin-top:5px;margin-bottom:20px; }
+.txt_subtitle1{ display:block; color:#333333; font-size:15px; font-family:"Open Sans","PingFang SC", "Microsoft Yahei", 微软雅黑, serif, Arial; padding-bottom:10px;margin-bottom:10px; border-bottom:1px solid #d4d4d4;text-align:center;}
+.txt_subtitle1b{ display:block; color:#333333; font-size:10.5pt; font-weight:bold;font-family:"Open Sans","PingFang SC", "Microsoft Yahei", 微软雅黑, serif, Arial; margin-bottom:10px; }
+.txt_subtitle2{ display:block; color:#333333; font-size:16px;font-weight:bold;padding-bottom:10px; margin-bottom:20px;  border-bottom:1px solid #d4d4d4;}
+.txt_subtitle3{ display:block; color:#333333; font-size:10.5pt; text-align:center; font-weight:bold;font-family:"Open Sans","PingFang SC", "Microsoft Yahei", 微软雅黑, serif, Arial; margin:10px; }
+.txt_subtitle4{ display:block;font-family:"Open Sans","PingFang SC", "Microsoft Yahei", 微软雅黑, serif, Arial, serif; color:#333333;font-weight:bold; font-size:20px;margin-top:10px;margin-bottom:20px; }
+.txt1{ display:block;text-align:left; color:#333333;  line-height:36px; font-size:17px;word-wrap: break-word;word-break: normal;margin: 10px 0px 0px 0px;font-family:"Open Sans","PingFang SC", "Microsoft Yahei", 微软雅黑, serif, Arial;}
+.txt1 img{ padding:10px;}
+/* 日期样式 */
+.date-style {
+	display:block; color:#9D9D9D; font-size:15px; 
+}

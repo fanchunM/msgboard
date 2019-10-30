@@ -1,0 +1,328 @@
+﻿/* CSS Document */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    /* height: 100%; */
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    border: 0px;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    blr: expression(this.onFocus=this.blur());
+}
+
+.index_pagetop {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.index_pagetop {
+    /* position: fixed; */
+    top: 0px;
+    width: 640px;
+    /* z-index: 99999; */
+}
+
+.index_pagetop {
+    width: 100%;
+}
+
+.mn-topbar-home {
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    background-color: #535353;
+    top: 0px;
+    left: 0px;
+    font-size: 0px;
+    z-index: 2;
+}
+
+.mn-topbar-logo {
+    padding: 0px 60px 0px 50px;
+    height: 50px;
+    background: #404040;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.mn-topbar-menu {
+    width: 60px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+}
+
+.mn-topbar-menu-list {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.46);
+}
+
+.mn-topbar-menu img {
+    width: 100%;
+    background: transparent url(../../images/mainmenutags.jpg) no-repeat -500px -500px;
+	height:50px
+}
+
+.mn-topbar-logo img {
+    height: 40px;
+    margin-top: 5px;
+    background: transparent url(../../images/szmtr-logo-white.png) no-repeat 40px 40px;
+}
+
+.clear {
+    clear: both;
+}
+
+.mn-topbar-menu-ul {
+	position:absolute;
+    display: block;
+    width: 180px;
+    background: rgb(50, 50, 50);
+    z-index: 999;
+    top: 50px;
+    right: 0px;
+    text-align: left
+}
+
+.mn-topbar-menu-ul li {
+    border-bottom: 1px solid rgb(40, 40, 40);
+    border-top: 1px solid rgb(90, 90, 90);
+}
+
+.more {
+    margin-left: 36px;
+}
+
+.mn-topbar-menu-ul li a {
+    padding: 10px 10px 10px 40px;
+    color: white;
+    display: block;
+    cursor: pointer;
+    margin-bottom: -2px;
+}
+
+.mn-topbar-menu-ul li a:hover {
+    background: rgb(176, 47, 68);
+}
+
+.mn-topbar-menu-ul li .dqian {
+    background: none
+}
+
+.mn-topbar-menu-ul li .active {
+    background: rgb(176, 47, 68);
+}
+
+.mn-topbar-menu-ul-secoud {
+    display: none;
+    width: 180px;
+    background: rgb(100, 100, 100);
+}
+
+.mn-topbar-menu-ul-secoud li {
+    width: 100%;
+    border: solid rgb(140, 140, 140);
+    border-width: 1px 0px 0px;
+}
+
+.mn-topbar-menu-ul-secoud li a {
+    display: block;
+    /* padding: 10px 10px 10px 20px; */
+    color: white;
+    background: none;
+    font-size: 15px;
+}
+
+.mn-topbar-menu-ul-secoud .mn-topbar-menu-ul-secoud-li a {
+    background: url(../../images/more.png) no-repeat 120px center;
+}
+
+.mn-topbar-menu-ul-secoud li a:hover, .mn-topbar-menu-ul-secoud li .sen_x {
+    background: rgb(253, 83, 49);
+}
+
+.mn-topbar-menu-ul-secoud .mn-topbar-menu-ul-secoud-li a:hover, .mn-topbar-menu-ul-secoud .mn-topbar-menu-ul-secoud-li .sen_x {
+    background: url(../../images/more.png) no-repeat 120px center rgb(253, 83, 49);
+}
+
+.mn-topbar-menu-ul-third {
+    background: rgb(150, 150, 150);
+    display: none;
+}
+
+.mn-topbar-menu-ul-third li {
+    margin-bottom: 1px;
+    border-top: 1px solid rgb(180, 180, 180);
+    position: relative;
+}
+
+.mn-topbar-menu-ul-secoud .mn-topbar-menu-ul-secoud-li .mn-topbar-menu-ul-third li a {
+    background: none;
+}
+
+.mn-topbar-menu-ul-secoud .mn-topbar-menu-ul-secoud-li .mn-topbar-menu-ul-third li a:hover {
+    background: rgb(249, 152, 49);
+}
+
+.mn-topbar-menu-ul-secoud .mn-topbar-menu-ul-secoud-li .mn-topbar-menu-ul-third li .xuan {
+    background: rgb(249, 152, 49);
+}
+
+.more1 {
+    margin-left: 28px;
+    margin-top: -4px;
+}
+
+.mn-topbar-menu-ul-third-content {
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    z-index: 10;
+    border: 1px solid rgb(201, 201, 201);
+    display: none;
+}
+
+.mn-topbar-menu-ul-third-content h3 {
+    font-weight: normal;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.mn-topbar-menu-ul-third-content img {
+    width: 100%;
+}
+
+/*      原网页            */
+ul.navlist li a{
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+}
+
+.menu{
+    width: 1200px;
+}
+
+div.subnav{
+    width: 151px;
+}
+
+.mn-page-header {
+    float: left;
+    border: solid #ccc 1px;
+    height: 35px;
+    width: 100%;
+    background: #f6f6f6;
+}
+
+.mn-page-header-title {
+    float: left;
+    height: 100%;
+    /*width: 100px;*/
+    padding: 0px 15px;
+  /*  background: #0080C0;*/
+   background: #910000;
+}
+
+.mn-page-header-title span {
+    font-size: 12pt;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+.mn-page-header-title-long {
+    float: left;
+    height: 100%;
+    width: 200px;
+    background: #910300;
+}
+
+.mn-page-header-title-long span {
+    font-size: 12pt;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+.mn-page-header-crumbs {
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.mn-box {
+    float: left;
+	border: solid #E8E8E8 1px;
+    width: 100%;
+    background: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px 5% 0 5%;
+}
+
+.mn-box-ul {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.mn-box-ul li {
+    text-align: left;
+    padding: 5px 0px 5px 18px;
+    letter-spacing: 0px;
+    overflow: hidden;
+    background: url(../../images/arrow.png) no-repeat 3px 10px;
+}
+
+.mn-box-ul li div {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.pages a {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+}
+/*      /原网页            */
+
+
+/*  底部 */
+.mn-foot {
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+	padding-bottom:13px;
+    overflow: hidden;
+    background: #910000;
+    color: #fff;
+    font-size: 10pt;
+    font-family: font-family:"Open Sans","PingFang SC", "Microsoft Yahei", 微软雅黑, serif, Arial, serif;
+    position: relative;
+}

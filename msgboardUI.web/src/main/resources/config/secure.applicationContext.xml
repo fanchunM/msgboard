@@ -1,0 +1,59 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<!-- 非拦截设置 -->
+	<security:http pattern="/login_page" security="none"/>
+	<security:http pattern="/resources/**" security="none"/>
+	
+	<!-- 拦截设置 use-expressions:Spring 表达式语言配置访问控制 -->
+	<security:http auto-config="false" use-expressions="false" entry-point-ref="loginEntryPoint">
+		<security:csrf disabled="true"/>
+		<security:headers>
+			<security:frame-options policy="SAMEORIGIN"/>
+		</security:headers>
+		<!-- 		配置登陆成功跳转页面 自定义FORM_LOGIN_FILTER需要注释掉 -->
+		<!-- <security:form-login login-page="/login_page" authentication-success-handler-ref="expaiSuccessHandler"/> -->
+		<!-- 需要替换的Filter顺序，配置自定义custom-filter时必须auto-config="false"，不然会报已经存在同样的过滤器错误 -->
+		<security:custom-filter ref="customUsernamePasswordAuthenticationFilter" position="FORM_LOGIN_FILTER"/>
+		<!-- 		<security:form-login login-page="/login_page"/> -->
+		<!-- 配置权限拦截，访问所有url，都需要用户登录，且拥有ROLE_USER权限 -->
+		<security:intercept-url pattern="/messageRelease" access="ROLE_USER,ROLE_ADMIN" />
+		<security:intercept-url pattern="/message_reminder" access="ROLE_USER,ROLE_ADMIN" />
+		<security:intercept-url pattern="/person" access="ROLE_USER,ROLE_ADMIN" />
+		<security:intercept-url pattern="/goDetail" access="ROLE_USER,ROLE_ADMIN" />
+		<security:logout logout-url="/logout" logout-success-url="/login_page?logout"/>
+		<!-- <security:intercept-url pattern="/**" access="ROLE_USER,ROLE_ADMIN" /> -->
+	</security:http>
+	
+	<bean id="customUsernamePasswordAuthenticationFilter"
+	    class="com.mine.product.msgboard.ui.service.CustomUsernamePasswordAuthenticationFilter">
+	    <property name="authenticationManager" ref="authenticationManager"/>
+	    <property name="authenticationSuccessHandler" ref="expaiSuccessHandler"/>
+	    <property name="authenticationFailureHandler" ref="expaiFailHandler"/>
+	</bean>
+	
+	<!-- loginEntryPoint -->
+    <bean id="loginEntryPoint"
+         class="org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint">
+         <!-- 默认登录页的url -->
+       <constructor-arg value="/login_page" />
+     </bean>
+	
+	<security:authentication-manager alias="authenticationManager">
+		<security:authentication-provider user-service-ref="mineSpringSecureUserService"></security:authentication-provider>
+	</security:authentication-manager>
+	
+	<!-- 自定义验证 -->
+	<!--<bean id="loginUserDetailService" class="com.mine.product.msgboard.ui.service.LoginUserDetailsServiceImpl"></bean>
+    <bean id="loginAuthenticationProvider" class="com.mine.product.msgboard.ui.service.LoginAuthenticationProvider">
+        <property name="userDetailsService" ref="loginUserDetailService"></property>
+    </bean>
+	<security:authentication-manager alias="authenticationManager">
+        <security:authentication-provider ref="loginAuthenticationProvider">
+        </security:authentication-provider>
+    </security:authentication-manager>-->
+</beans>
